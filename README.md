@@ -1,6 +1,7 @@
 # RigidBot Firmware
 
 Custom Marlin firmware for the RigidBot line of 3D printers.
+Default parameters changed for RigidBot Big + E3D v6 hotend (changed thermo sensor type) + some customization. 
 
 ## Usage Instructions
 
