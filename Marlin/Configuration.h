@@ -2,11 +2,11 @@
 #define CONFIGURATION_H
 
 //	Uncomment the following options for your machine
-//#define	RIGIDBOT_BIG
+#define	RIGIDBOT_BIG
 //#define	RIGIDBOT_DUAL_EXTRUDER
 
 
-#define		RIGIDBOT_VERSION	"1.1"
+#define		RIGIDBOT_VERSION	"1.1.skt-e3dv6"
 #define		RIGIDBOT_DATE		"2014-08-11"
 
 
@@ -18,7 +18,7 @@
 //Implementation of an idea by Prof Braino to inform user that any changes made
 //to this build by the user have been successfully uploaded into firmware.
 #define STRING_VERSION_CONFIG_H __DATE__ " " __TIME__ // build date and time
-#define STRING_CONFIG_H_AUTHOR "(none, default config)" //Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(Skeeet, changes for E3Dv6 hotend)" //Who made the changes.
 
 // SERIAL_PORT selects which serial port should be used for communication with the host.
 // This allows the connection of wireless adapters (for instance) to non-default port pins.
@@ -104,8 +104,8 @@
 // 52 is 200k thermistor - ATC Semitec 204GT-2 (1k pullup)
 // 55 is 100k thermistor - ATC Semitec 104GT-2 (Used in ParCan) (1k pullup)
 
-#define TEMP_SENSOR_0 1
-#define TEMP_SENSOR_1 1
+#define TEMP_SENSOR_0 5
+#define TEMP_SENSOR_1 5
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_BED 1
 
@@ -293,7 +293,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #ifdef RIGIDBOT_BIG
 #define X_MAX_BASE 406
 #define Y_MAX_BASE 304
-#define Z_MAX_BASE 254
+#define Z_MAX_BASE 244
 #define X_DUAL_REDUCTION 57
 #else
 #define X_MAX_BASE 254
@@ -321,7 +321,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define X_CENTER_POS	((X_MIN_POS + X_MAX_POS) / 2)
 #define Y_CENTER_POS	((Y_MIN_POS + Y_MAX_POS) / 2)
 
-#define Z_LIFT_DEFAULT		20
+#define Z_LIFT_DEFAULT		40
 
 
 ////	Rest position after homing all axis. Not yet implemented
@@ -394,7 +394,7 @@ const bool Z_ENDSTOPS_INVERTING = true; // set to true to invert the logic of th
 #define PLA_PREHEAT_FAN_SPEED		255   // Insert Value between 0 and 255
 
 #define ABS_PREHEAT_HOTEND_TEMP		230
-#define ABS_PREHEAT_HPB_TEMP		100
+#define ABS_PREHEAT_HPB_TEMP		90
 #define ABS_PREHEAT_FAN_SPEED		255   // Insert Value between 0 and 255
 
 //LCD and SD support
